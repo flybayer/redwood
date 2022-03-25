@@ -18,6 +18,7 @@ export const flightcontrolConfig = {
             'yarn set version stable && NODE_ENV=development yarn install --immutable',
           buildCommand: 'yarn rw deploy flightcontrol api',
           startCommand: 'yarn rw deploy flightcontrol api --serve',
+          port: 8911,
           postBuildCommand: 'echo 0',
           healthCheckPath: '/graphql/health',
           envVariables: {},
